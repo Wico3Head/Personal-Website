@@ -1,0 +1,97 @@
+*{
+    color: #ffffff;
+}
+
+body{
+    background-color: #282c30;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+}
+
+.main-content{
+    padding-top: 76px;
+}
+
+.home-title{
+    background: linear-gradient(to top, #00000069, #00000069),url(../img/title-bg.jpg);
+}
+
+.alex-title{
+    background: linear-gradient(to top, #00000069, #00000069),url(../img/spicy.png);
+}
+
+.project-title{
+    background: url(../img/project.png);
+    opacity: 80%;
+}
+
+.blog-title{
+    background: linear-gradient(to top, #00000069, #00000069),url(../img/spicy.png);
+}
+
+.tutor-title{
+    background: linear-gradient(to top, #00000069, #00000069),url(../img/spicy.png);
+}
+
+.contact{
+    background: linear-gradient(to top, #00000069, #00000069),url(../img/spicy.png);
+}
+
+section{
+    background-color: #505050;
+    border-radius: 20px;
+    display: flex;
+    padding: 2%
+}
+
+section span{
+    text-align: right;
+}
+
+.title{
+    margin: 0px;
+    padding: 1em;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.title h1{
+    padding: 10%;
+    font-size: 6.5em;
+    text-align: left;
+    vertical-align: middle;
+    color: white;
+    user-select: none;
+}
+
+.selfie{
+    float: right;
+    margin: 25px;
+    border-radius: 5%;
+}
+
+.rosanna{
+    float: right;
+    margin: 30px;
+}
+
+.rosanna img{
+    border-radius: 5%;
+}
+
+.text {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+footer{
+    background-color: #424242;
+    padding: 2em;
+}
