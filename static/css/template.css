@@ -65,7 +65,7 @@ section span{
     font-size: 6.5em;
     text-align: left;
     vertical-align: middle;
-    color: white;
+    color: white in !important;
     user-select: none;
 }
 
