@@ -1,5 +1,6 @@
 *{
     color: #ffffff;
+    box-sizing: border-box;
 }
 
 body{
@@ -25,7 +26,6 @@ header{
 
 .project-title{
     background: url(../img/project.png);
-    opacity: 80%;
 }
 
 .blog-title{
@@ -44,11 +44,17 @@ section{
     background-color: #505050;
     border-radius: 20px;
     display: flex;
-    padding: 2%
 }
 
-section span{
-    text-align: right;
+.project-image{
+    border-radius: 20px 0px 0px 20px;
+    width: 26%;
+}
+
+.project-info{
+    margin: auto;
+    padding: 30px;
+    height: 100%;   
 }
 
 .title{
@@ -58,6 +64,16 @@ section span{
     background-position: center;
     align-items: center;
     justify-content: center;
+}
+
+.title h1{
+    animation-name: title-scroll;
+    animation-duration: 1.0s;
+    animation-direction: reverse;
+}
+
+@keyframes title-scroll{
+    100% {transform: rotateY(60deg); opacity: 0.0};
 }
 
 .title h1{
