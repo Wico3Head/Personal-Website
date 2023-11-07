@@ -1,6 +1,5 @@
 *{
     color: #ffffff;
-    box-sizing: border-box;
 }
 
 body{
@@ -36,20 +35,31 @@ header{
     background: linear-gradient(to top, #00000069, #00000069),url(../img/spicy.png);
 }
 
-.contact{
-    background: linear-gradient(to top, #00000069, #00000069),url(../img/spicy.png);
+.contact-title{
+    background: linear-gradient(to top, #00000069, #00000069),url(../img/contact.jpg);
 }
 
 .project-container{
     background-color: #505050;
+    margin: 30px;
     border-radius: 20px;
-    display: flex;
+    overflow: hidden;
+}
+
+.project-container:hover{
+    background-color: #606060;
 }
 
 .project-image{
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 20px;
+    margin: 20px;
     width: 300px;
+    height: 300px;
     float: left;
+}
+
+a {
+    text-decoration: none;
 }
 
 .project-info{
