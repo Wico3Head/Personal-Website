@@ -1,3 +1,20 @@
+<!--
+This file does not define an actual webpage, it is just a template for all
+pages in the personal website.
+
+It contains the header (navigation bar) and the footer
+
+When making a new page, the following lines serve as a template so that we
+don't need to copy the entire code for the template everytime
+
+{% extends 'base.html' %}
+
+{% block content %}
+    <p> insert your content here </p>
+{% endblock %}
+
+-->
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
@@ -16,29 +33,29 @@
   <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="../static/img/circle-pepe.png" alt="Pepe" width="50" height="50"></a>
+        <a class="navbar-brand" href=""><img src="../static/img/circle-pepe.png" alt="Pepe" width="50" height="50"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="alex.html">Alex</a>
+              <a class="nav-link" href="alex">Alex</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="project.html">Projects</a>
+              <a class="nav-link" href="project">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
+              <a class="nav-link" href="blog">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tutor.html">Tutoring</a>
+              <a class="nav-link" href="tutor">Tutoring</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Me</a>
+              <a class="nav-link" href="contact">Contact Me</a>
             </li>
           </ul>
         </div>

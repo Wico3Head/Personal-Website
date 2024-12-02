@@ -1,98 +1,43 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Alexander Francesco Fenn Parante">
-    <meta name="keywords" content="Personal Website, Alex">
-    <meta name="author" content="Rico Chung">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="../static/css/template.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="../static/img/circle-pepe.png">
-    <title>Rico's Website</title>
-</head>
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img src="../static/img/circle-pepe.png" alt="Pepe" width="50" height="50"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="alex.html">Alex</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="project.html">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="tutor.html">Tutoring</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Me</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <div class="main-content">
-    <div class="title home-title">
-        <h1>Welcome!</h1>
-    </div>  
-    <div class="container">
-        <img src="../static/img/selfie.jpg" alt="selfie of myself" class="selfie">
-        <h1 class="section-title">Welcome to my Personal Website!</h1>
-        <p class="text">
-            <span style="font-size: 1.5em;">Greetings!</span>
-            My name is Chung Cheuk Yin, but most people call me Rico. I am an undergraduate studying Mathematics at 
-            the University of Oxford, Exeter College. Originally from Hong Kong, I’m passionate about understanding 
-            the world through the lens of mathematics and its incredible applications in both science and technology.
-        </p>
+{% extends 'base.html' %}
 
-        <p class="text">
-          Alongside my studies, I work as a part-time tutor for Mathematics and Physics. Teaching has deepened my 
-          understanding of these subjects and fueled my desire to make education more accessible and engaging. I’m 
-          currently involved in a startup called Eddie, which seeks to revolutionize the tutoring industry by offering 
-          tools like a question bank, an online whiteboard, and a platform to connect tutors with tutees.
-        </p>
+{% block content %}
+<div class="title home-title">
+  <h1>Welcome!</h1>
+</div>  
+<div class="container">
+  <img src="../static/img/selfie.jpg" alt="selfie of myself" class="selfie">
+  <h1 class="section-title">Welcome to my Personal Website!</h1>
+  <p class="text">
+      <span style="font-size: 1.5em;">Greetings!</span>
+      My name is Chung Cheuk Yin, but most people call me Rico. I am an undergraduate studying Mathematics at 
+      the University of Oxford, Exeter College. Originally from Hong Kong, I’m passionate about understanding 
+      the world through the lens of mathematics and its incredible applications in both science and technology.
+  </p>
 
-        <p class=text>
-          While academics play a big role in my life, I’m also someone who thrives on diverse experiences. I’m a keen 
-          fencer and basketball player, both of which challenge me to think strategically and stay active. Additionally, 
-          I’m learning the traditional Chinese unicorn dance, which connects me to my cultural roots and provides a 
-          fun, creative outlet.
-        </p>
+  <p class="text">
+    Alongside my studies, I work as a part-time tutor for Mathematics and Physics. Teaching has deepened my 
+    understanding of these subjects and fueled my desire to make education more accessible and engaging. I’m 
+    currently involved in a startup called Eddie, which seeks to revolutionize the tutoring industry by offering 
+    tools like a question bank, an online whiteboard, and a platform to connect tutors with tutees.
+  </p>
 
-        <p class="text">
-          This website serves as my platform to share my projects, interests, and journey as I grow academically, 
-          professionally, and personally. Whether it's a new mathematical concept, an AI project, or an update on Eddie, 
-          you’ll find it all here.
-        </p>
+  <p class=text>
+    While academics play a big role in my life, I’m also someone who thrives on diverse experiences. I’m a keen 
+    fencer and basketball player, both of which challenge me to think strategically and stay active. Additionally, 
+    I’m learning the traditional Chinese unicorn dance, which connects me to my cultural roots and provides a 
+    fun, creative outlet.
+  </p>
 
-        <p class="text">
-          Feel free to explore the different sections of my website, and if you’d like to reach out, you can find my 
-          details on the Contact Me page. Your presence and feedback mean a lot—thank you for visiting, and I hope you 
-          enjoy your time here!
-        </p>
-    </div>
-  </div>
-  <footer>
-    <p id="copyright">sussy balls</p>
-  </footer>
+  <p class="text">
+    This website serves as my platform to share my projects, interests, and journey as I grow academically, 
+    professionally, and personally. Whether it's a new mathematical concept, an AI project, or an update on Eddie, 
+    you’ll find it all here.
+  </p>
 
-  <script>
-    const currentYear = new Date().getFullYear();
-    document.getElementById("copyright").innerHTML = currentYear.toString() + " All Rights Reserved"
-  </script>
-</body>
-</html>
+  <p class="text">
+    Feel free to explore the different sections of my website, and if you’d like to reach out, you can find my 
+    details on the Contact Me page. Your presence and feedback mean a lot—thank you for visiting, and I hope you 
+    enjoy your time here!
+  </p>
+</div>
+{% endblock %}
