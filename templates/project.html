@@ -1,109 +1,53 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Alexander Francesco Fenn Parante">
-    <meta name="keywords" content="Personal Website, Alex">
-    <meta name="author" content="Rico Chung">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link href="../static/css/template.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="../static/js/script.js"></script>
-    <link rel="icon" type="image/x-icon" href="../static/img/circle-pepe.png">
-    <title>Rico's Website</title>
-</head>
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="../static/img/circle-pepe.png" alt="Pepe" width="50" height="50"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="alex.html">Alex</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="project.html">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="blog.html">Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="tutor.html">Tutoring</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Me</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-  </header>
-  <div class="main-content">
-    <div class="title project-title">
-        <h1>Projects</h1>
-    </div>  
-    <div class="text">
-        <a href="ball1.html">
-          <div class="project-container">
-            <img src="../static/img/ball.jpg" alt="balls" class="project-image">
-            <span class="project-info">
-                <h2>Balls</h2>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam omnis sed obcaecati harum velit 
-                  laboriosam iure! Accusantium labore quaerat in cumque voluptatem placeat vero consequuntur officia 
-                  consectetur sunt nemo, omnis expedita minima voluptate sit doloremque hic numquam assumenda quod 
-                  voluptas sed! Nam incidunt sit soluta amet optio quidem, veritatis quas!
-                </p>
-            </span>
-          </div>
-        </a>
+{% extends 'base.html' %}
 
-        <a href="ball2.html">
-          <div class="project-container">
-            <img src="../static/img/ball.jpg" alt="balls" class="project-image">
-            <span class="project-info">
-                <h2>Balls</h2>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam omnis sed obcaecati harum velit 
-                  laboriosam iure! Accusantium labore quaerat in cumque voluptatem placeat vero consequuntur officia 
-                  consectetur sunt nemo, omnis expedita minima voluptate sit doloremque hic numquam assumenda quod 
-                  voluptas sed! Nam incidunt sit soluta amet optio quidem, veritatis quas!
-                </p>
-            </span>
-          </div>
-        </a>
+{% block content %}
+<div class="title project-title">
+    <h1>Projects</h1>
+</div>  
+<div class="text">
+    <a href="ball1.html">
+      <div class="project-container">
+        <img src="../static/img/ball.jpg" alt="balls" class="project-image">
+        <span class="project-info">
+            <h2>Balls</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam omnis sed obcaecati harum velit 
+              laboriosam iure! Accusantium labore quaerat in cumque voluptatem placeat vero consequuntur officia 
+              consectetur sunt nemo, omnis expedita minima voluptate sit doloremque hic numquam assumenda quod 
+              voluptas sed! Nam incidunt sit soluta amet optio quidem, veritatis quas!
+            </p>
+        </span>
+      </div>
+    </a>
 
-        <a href="ball3.html">
-          <div class="project-container">
-            <img src="../static/img/ball.jpg" alt="balls" class="project-image">
-            <span class="project-info">
-                <h2>Balls</h2>
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam omnis sed obcaecati harum velit 
-                  laboriosam iure! Accusantium labore quaerat in cumque voluptatem placeat vero consequuntur officia 
-                  consectetur sunt nemo, omnis expedita minima voluptate sit doloremque hic numquam assumenda quod 
-                  voluptas sed! Nam incidunt sit soluta amet optio quidem, veritatis quas!
-                </p>
-            </span>
-          </div>
-        </a>
-    </div>
-  </div>
-  <footer>
-    <p id="copyright">sussy balls</p>
-  </footer>
+    <a href="ball2.html">
+      <div class="project-container">
+        <img src="../static/img/ball.jpg" alt="balls" class="project-image">
+        <span class="project-info">
+            <h2>Balls</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam omnis sed obcaecati harum velit 
+              laboriosam iure! Accusantium labore quaerat in cumque voluptatem placeat vero consequuntur officia 
+              consectetur sunt nemo, omnis expedita minima voluptate sit doloremque hic numquam assumenda quod 
+              voluptas sed! Nam incidunt sit soluta amet optio quidem, veritatis quas!
+            </p>
+        </span>
+      </div>
+    </a>
 
-  <script>
-    const currentYear = new Date().getFullYear();
-    document.getElementById("copyright").innerHTML = currentYear.toString() + " All Rights Reserved"
-  </script>
-</body>
-</html>
+    <a href="ball3.html">
+      <div class="project-container">
+        <img src="../static/img/ball.jpg" alt="balls" class="project-image">
+        <span class="project-info">
+            <h2>Balls</h2>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam omnis sed obcaecati harum velit 
+              laboriosam iure! Accusantium labore quaerat in cumque voluptatem placeat vero consequuntur officia 
+              consectetur sunt nemo, omnis expedita minima voluptate sit doloremque hic numquam assumenda quod 
+              voluptas sed! Nam incidunt sit soluta amet optio quidem, veritatis quas!
+            </p>
+        </span>
+      </div>
+    </a>
+</div>
+{% endblock %}
